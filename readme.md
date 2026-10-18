@@ -344,11 +344,9 @@ Start with a short video while validating the environment.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Adidem23/Drone_agent.git
-cd Drone_agent
+git clone https://github.com/Adidem23/ArgusGraph
+cd ArgusGraph
 ```
-
-Use the repository that contains your current ArgusGraph application if its code is maintained separately. The URL above is the related project repository provided during development.
 
 ### 2. Start FalkorDB
 
@@ -392,7 +390,25 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-If the backend uses a different dependency file, follow the actual project structure.
+and go into agent directory and set up another env there this is done to avoid 
+
+```powershell
+python -m venv mcpenv
+.\mcpenv\Scripts\Activate.ps1
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+**Linux/macOS:**
+
+```bash
+python3 -m venv mcpenv
+source .mcpenv/bin/activate
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
 
 ### 4. Configure Environment Variables
 
@@ -402,21 +418,16 @@ Example configuration:
 
 ```dotenv
 GEMINI_API_KEY=your_gemini_api_key
-
 FALKORDB_HOST=localhost
 FALKORDB_PORT=6379
 FALKORDB_PASSWORD=
 FALKORDB_GRAPH_NAME=argusgraph
+
+# Use your device path for the these files video_pipeline.py is present in backend file 
+ARGUSGRAPH_PIPELINE_SCRIPT=D:/hp/Dev/CCTV_Falkor_DB/backend/video_pipeline.py
+ARGUSGRAPH_OUTPUT_DIR=D:/hp/Dev/CCTV_Falkor_DB/backend/Jobs # you can chnage these paths if wanted 
+ARGUSGRAPH_UPLOAD_DIR=D:/hp/Dev/CCTV_Falkor_DB/backend/uploads # you can chnage these paths if wanted 
 ```
-
-These are example names and values. Replace them with the exact environment variables expected by your code.
-
-**Important:**
-
-- Never commit API keys or passwords.
-- Ensure the ingestion pipeline and MCP server connect to the intended FalkorDB instance.
-- Ensure both components use the correct graph name.
-- Follow the actual configuration for hosted databases or alternative authentication methods.
 
 ### 5. Configure Video Inference
 
@@ -438,12 +449,10 @@ Preserve the existing video-processing and graph-ingestion logic when integratin
 Navigate to the frontend directory containing `package.json`:
 
 ```bash
-npm install
+pnpm install
 ```
 
 If the project uses a `pnpm-lock.yaml` or `yarn.lock` file, use the corresponding package manager instead.
-
-Configure the frontend API base URL according to the environment variable expected by the application. The default local FastAPI address is often `http://localhost:8000`, but verify the actual port and configuration.
 
 ---
 
@@ -459,6 +468,14 @@ Start the local container or confirm that your hosted FalkorDB instance is reach
 
 Run the MCP server using the entry point configured in your project.
 
+run commands 
+```sh
+  cd backend
+    cd Agent
+    ./mcpenv/Scripts/activate
+    python server.py
+```
+
 Confirm that:
 
 - The server starts without errors.
@@ -466,13 +483,15 @@ Confirm that:
 - Its graph-query tools are registered.
 - The configured MCP client can connect to it.
 
-The exact command depends on the MCP server module and transport configured in the repository.
+
 
 ### 3. Start the FastAPI Backend
 
 If your application exposes an `app` instance in `main.py`, use:
 
 ```bash
+cd backend
+./venv/Scripts/acitvate
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
@@ -533,62 +552,11 @@ Depending on the configured pipeline, outputs may include:
 | `.npz` embedding files | Persisted visual embedding arrays when enabled. |
 | FalkorDB graph | Connected video, frame, and frame-attribute records. |
 
-Verify the output paths and filenames in the implementation. Do not assume embeddings are stored inside FalkorDB unless the ingestion code explicitly does so.
+Verify the output paths and filenames in the implementation
 
 ---
 
-## Troubleshooting
 
-### Raw Markdown Appears in the UI
-
-If the frontend displays `\##`, `\*`, or `\*\*`, inspect the raw API response.
-
-- Check whether backslashes are introduced by the model, backend serialization, or frontend processing.
-- Render the response using a Markdown renderer.
-- Avoid blindly removing all backslashes, since they may be meaningful in code or other text.
-
-### Gemini Scene Descriptions Are Missing
-
-Check the inference logs for:
-
-- API quota or resource-exhaustion errors.
-- Model initialization failures.
-- Skipped scene-analysis stages.
-- Invalid or incomplete model responses.
-
-The agent may still answer using stored captions and detections, but the evidence may be less complete.
-
-### Frame Queries Return No Results
-
-- Confirm that the video was ingested into the expected graph.
-- Verify the frame label and exact property name.
-- Check whether the identifier is stored as `frame_id` or another property.
-- Confirm the relationship direction and relationship type.
-
-Try:
-
-```cypher
-MATCH (f:Frame)
-RETURN f
-LIMIT 5
-```
-
-### MCP Connection Resets
-
-A connection-reset message alone does not prove the MCP server crashed.
-
-Check:
-
-- Whether the original request completed.
-- Whether the client disconnected.
-- Whether subsequent tool calls succeed.
-- The full traceback and server logs.
-
-### Video Inference Runs Out of Memory
-
-Start with a shorter clip and inspect the model's memory requirements. Adjust the existing pipeline configuration only after evaluating how changes affect frame coverage and evidence quality.
-
----
 
 ## Responsible Use
 
