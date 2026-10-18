@@ -3,3 +3,6 @@ venv
 Test
 yolo26m.pt
 yolov8n.pt
+__pycache__
+Jobs
+uploads
