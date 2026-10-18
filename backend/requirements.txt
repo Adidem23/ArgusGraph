@@ -13,3 +13,5 @@ fastmcp
 deepagents 
 langchain-mcp-adapters 
 langchain-google-genai
+fastapi
+uvicorn
