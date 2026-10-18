@@ -1,0 +1,5 @@
+venv
+.env
+Test
+yolo26m.pt
+yolov8n.pt

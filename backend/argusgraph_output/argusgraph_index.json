@@ -1,0 +1,2676 @@
+{
+  "video_id": "CCTV_Feed_1",
+  "video_name": "CCTV_Feed_1.mp4",
+  "video_path": "Videos\\CCTV_Feed_1.mp4",
+  "duration_seconds": 17.0,
+  "fps": 6.0,
+  "original_frame_count": 102,
+  "frames": [
+    {
+      "frame_index": 0,
+      "timestamp_seconds": 0.0,
+      "change_score": 0.0,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000000",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000000.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 5,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.6933,
+          "bbox_xyxy": [
+            774.44,
+            512.18,
+            866.57,
+            785.9
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6102,
+          "bbox_xyxy": [
+            1009.47,
+            320.03,
+            1078.29,
+            501.55
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3647,
+          "bbox_xyxy": [
+            565.99,
+            299.83,
+            704.39,
+            381.63
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3487,
+          "bbox_xyxy": [
+            1824.52,
+            366.03,
+            1881.19,
+            468.45
+          ]
+        },
+        {
+          "label": "boat",
+          "confidence": 0.3477,
+          "bbox_xyxy": [
+            469.24,
+            799.25,
+            944.83,
+            1074.59
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "A busy indoor warehouse or logistics facility with numerous cardboard boxes, pallets, and several individuals engaged in sorting, packing, and moving items.",
+        "scene_type": "Warehouse/Logistics facility",
+        "activities": [
+          "Sorting items on a large table",
+          "Packing items into cardboard boxes",
+          "Moving boxes, some on pallets, some on a conveyor belt",
+          "Working at a conveyor belt"
+        ],
+        "safety_concerns": [
+          "Cluttered walkways/work areas due to numerous boxes and equipment, posing potential tripping hazards",
+          "Potential for falling objects from stacked boxes",
+          "Lack of clear pathways for equipment like the pallet jack"
+        ],
+        "visible_evidence": [
+          "Multiple individuals wearing high-visibility vests",
+          "Numerous cardboard boxes, some stacked on wooden pallets",
+          "A large white table with various items on its surface",
+          "A pallet jack on the floor",
+          "A conveyor belt with boxes on it",
+          "Loading dock doors in the background",
+          "Metal shelving/racks",
+          "A blue portable office/shed",
+          "Date and time overlay: 01/10/2014 10:45:10 AM"
+        ],
+        "uncertainty": [
+          "The exact nature of the items being sorted/packed on the table is unclear",
+          "The specific contents of the sealed boxes are unknown",
+          "Whether the pallet jack is in active use or parked is not clear from this single frame",
+          "The purpose of the blue portable office/shed is not specified"
+        ]
+      },
+      "scene_description": "A busy indoor warehouse or logistics facility with numerous cardboard boxes, pallets, and several individuals engaged in sorting, packing, and moving items.",
+      "scene_type": "Warehouse/Logistics facility",
+      "activities": [
+        "Sorting items on a large table",
+        "Packing items into cardboard boxes",
+        "Moving boxes, some on pallets, some on a conveyor belt",
+        "Working at a conveyor belt"
+      ],
+      "safety_concerns": [
+        "Cluttered walkways/work areas due to numerous boxes and equipment, posing potential tripping hazards",
+        "Potential for falling objects from stacked boxes",
+        "Lack of clear pathways for equipment like the pallet jack"
+      ],
+      "visible_evidence": [
+        "Multiple individuals wearing high-visibility vests",
+        "Numerous cardboard boxes, some stacked on wooden pallets",
+        "A large white table with various items on its surface",
+        "A pallet jack on the floor",
+        "A conveyor belt with boxes on it",
+        "Loading dock doors in the background",
+        "Metal shelving/racks",
+        "A blue portable office/shed",
+        "Date and time overlay: 01/10/2014 10:45:10 AM"
+      ],
+      "uncertainty": [
+        "The exact nature of the items being sorted/packed on the table is unclear",
+        "The specific contents of the sealed boxes are unknown",
+        "Whether the pallet jack is in active use or parked is not clear from this single frame",
+        "The purpose of the blue portable office/shed is not specified"
+      ]
+    },
+    {
+      "frame_index": 6,
+      "timestamp_seconds": 1.0,
+      "change_score": 0.00107,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000001",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000001.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 9,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.6978,
+          "bbox_xyxy": [
+            774.5,
+            497.07,
+            866.38,
+            785.98
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5524,
+          "bbox_xyxy": [
+            998.36,
+            320.07,
+            1060.95,
+            497.98
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.492,
+          "bbox_xyxy": [
+            1277.62,
+            683.12,
+            1454.68,
+            843.84
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4486,
+          "bbox_xyxy": [
+            1172.57,
+            560.37,
+            1395.6,
+            695.65
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3705,
+          "bbox_xyxy": [
+            566.29,
+            299.72,
+            703.97,
+            380.89
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3215,
+          "bbox_xyxy": [
+            1501.55,
+            479.6,
+            1739.53,
+            759.52
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3186,
+          "bbox_xyxy": [
+            716.29,
+            533.31,
+            757.75,
+            668.02
+          ]
+        },
+        {
+          "label": "boat",
+          "confidence": 0.2856,
+          "bbox_xyxy": [
+            466.23,
+            799.4,
+            943.8,
+            1073.82
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2618,
+          "bbox_xyxy": [
+            1391.15,
+            313.22,
+            1650.66,
+            638.46
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "The scene depicts an indoor warehouse or distribution center with a concrete floor and high ceilings. Numerous cardboard boxes are stacked on pallets and directly on the floor throughout the area. Several individuals, some wearing high-visibility orange vests, are present. A long white table is set up in the middle ground where multiple people are actively engaged in handling items. In the background, multiple loading dock doors are visible, along with metal shelving units and a conveyor belt system. A yellow and black hand pallet truck is on the floor.",
+        "scene_type": "Warehouse / Distribution Center",
+        "activities": [
+          "Individuals are working at a table, appearing to sort or process items.",
+          "People are handling and moving cardboard boxes.",
+          "Boxes are stacked on pallets, suggesting storage or preparation for transport.",
+          "A conveyor belt system is present, indicating material movement."
+        ],
+        "safety_concerns": [
+          "Clutter on the floor from numerous boxes and equipment could pose tripping hazards.",
+          "Stacked boxes, if not properly secured, could fall and cause injury.",
+          "Operation of material handling equipment (like the hand pallet truck and conveyor belt) carries inherent risks."
+        ],
+        "visible_evidence": [
+          "Multiple individuals, at least five, are visible, some wearing high-visibility orange vests.",
+          "Numerous cardboard boxes of various sizes, many stacked on wooden pallets.",
+          "A long white table with items on its surface, where people are working.",
+          "A yellow and black hand pallet truck is on the floor.",
+          "Several loading dock doors are visible in the background, some numbered (e.g., 12, 65, 64).",
+          "Metal shelving units and racks are present.",
+          "A blue portable office or storage unit is in the background.",
+          "A conveyor belt system with boxes on it is visible on the right side.",
+          "A digital timestamp '01/10/2014 10:45:11 AM' is displayed in the top right corner."
+        ],
+        "uncertainty": [
+          "The specific contents of the boxes are not discernible.",
+          "The exact nature of the items being handled at the table is unclear.",
+          "The precise roles or tasks of each individual are not fully discernible from this single frame."
+        ]
+      },
+      "scene_description": "The scene depicts an indoor warehouse or distribution center with a concrete floor and high ceilings. Numerous cardboard boxes are stacked on pallets and directly on the floor throughout the area. Several individuals, some wearing high-visibility orange vests, are present. A long white table is set up in the middle ground where multiple people are actively engaged in handling items. In the background, multiple loading dock doors are visible, along with metal shelving units and a conveyor belt system. A yellow and black hand pallet truck is on the floor.",
+      "scene_type": "Warehouse / Distribution Center",
+      "activities": [
+        "Individuals are working at a table, appearing to sort or process items.",
+        "People are handling and moving cardboard boxes.",
+        "Boxes are stacked on pallets, suggesting storage or preparation for transport.",
+        "A conveyor belt system is present, indicating material movement."
+      ],
+      "safety_concerns": [
+        "Clutter on the floor from numerous boxes and equipment could pose tripping hazards.",
+        "Stacked boxes, if not properly secured, could fall and cause injury.",
+        "Operation of material handling equipment (like the hand pallet truck and conveyor belt) carries inherent risks."
+      ],
+      "visible_evidence": [
+        "Multiple individuals, at least five, are visible, some wearing high-visibility orange vests.",
+        "Numerous cardboard boxes of various sizes, many stacked on wooden pallets.",
+        "A long white table with items on its surface, where people are working.",
+        "A yellow and black hand pallet truck is on the floor.",
+        "Several loading dock doors are visible in the background, some numbered (e.g., 12, 65, 64).",
+        "Metal shelving units and racks are present.",
+        "A blue portable office or storage unit is in the background.",
+        "A conveyor belt system with boxes on it is visible on the right side.",
+        "A digital timestamp '01/10/2014 10:45:11 AM' is displayed in the top right corner."
+      ],
+      "uncertainty": [
+        "The specific contents of the boxes are not discernible.",
+        "The exact nature of the items being handled at the table is unclear.",
+        "The precise roles or tasks of each individual are not fully discernible from this single frame."
+      ]
+    },
+    {
+      "frame_index": 12,
+      "timestamp_seconds": 2.0,
+      "change_score": 0.00165,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000002",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000002.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 8,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7142,
+          "bbox_xyxy": [
+            772.02,
+            495.85,
+            866.02,
+            786.7
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5134,
+          "bbox_xyxy": [
+            992.36,
+            310.34,
+            1062.42,
+            492.9
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4167,
+          "bbox_xyxy": [
+            1268.87,
+            562.46,
+            1396.14,
+            691.17
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4037,
+          "bbox_xyxy": [
+            1078.74,
+            420.05,
+            1161.62,
+            582.83
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3798,
+          "bbox_xyxy": [
+            1281.88,
+            681.21,
+            1455.99,
+            841.66
+          ]
+        },
+        {
+          "label": "boat",
+          "confidence": 0.3366,
+          "bbox_xyxy": [
+            470.13,
+            798.59,
+            944.94,
+            1074.38
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3197,
+          "bbox_xyxy": [
+            566.12,
+            299.98,
+            704.76,
+            381.14
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.251,
+          "bbox_xyxy": [
+            1170.01,
+            560.05,
+            1391.7,
+            695.42
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and workers",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "A large indoor warehouse or loading dock area with a concrete floor. Numerous cardboard boxes are stacked on pallets and along a conveyor belt system. Several individuals, many wearing high-visibility vests, are present and engaged in various tasks. Loading dock doors are visible in the background.",
+        "scene_type": "Warehouse",
+        "activities": [
+          "Sorting or packing items at a large table",
+          "Moving or handling boxes, some on pallets",
+          "Operating or monitoring a conveyor belt system",
+          "Walking within the warehouse space"
+        ],
+        "safety_concerns": [
+          "Cluttered walkways due to stacked boxes and pallets, posing tripping hazards",
+          "Potential for injury from lifting or moving heavy boxes",
+          "Operation of a conveyor belt system, which could pose entanglement or pinch point risks",
+          "Presence of a pallet jack, which could cause injury if not operated safely"
+        ],
+        "visible_evidence": [
+          "Multiple individuals, some wearing orange high-visibility vests",
+          "Numerous cardboard boxes, some sealed with blue tape, some open",
+          "Wooden pallets, some loaded with boxes",
+          "A manual pallet jack",
+          "A large white table with items on its surface",
+          "A conveyor belt system with boxes on it",
+          "Loading dock doors (numbered 11, 12, 64, 65)",
+          "Metal storage racks",
+          "A small blue office/structure",
+          "A digital timestamp \"01/10/2014 10:45:12 AM\""
+        ],
+        "uncertainty": [
+          "The exact nature of the items being sorted or packed on the table is unclear",
+          "The specific contents of the sealed boxes are unknown",
+          "The purpose of the small blue office/structure is not explicitly visible",
+          "Whether the loading dock doors are open or closed is not fully clear for all of them"
+        ]
+      },
+      "scene_description": "A large indoor warehouse or loading dock area with a concrete floor. Numerous cardboard boxes are stacked on pallets and along a conveyor belt system. Several individuals, many wearing high-visibility vests, are present and engaged in various tasks. Loading dock doors are visible in the background.",
+      "scene_type": "Warehouse",
+      "activities": [
+        "Sorting or packing items at a large table",
+        "Moving or handling boxes, some on pallets",
+        "Operating or monitoring a conveyor belt system",
+        "Walking within the warehouse space"
+      ],
+      "safety_concerns": [
+        "Cluttered walkways due to stacked boxes and pallets, posing tripping hazards",
+        "Potential for injury from lifting or moving heavy boxes",
+        "Operation of a conveyor belt system, which could pose entanglement or pinch point risks",
+        "Presence of a pallet jack, which could cause injury if not operated safely"
+      ],
+      "visible_evidence": [
+        "Multiple individuals, some wearing orange high-visibility vests",
+        "Numerous cardboard boxes, some sealed with blue tape, some open",
+        "Wooden pallets, some loaded with boxes",
+        "A manual pallet jack",
+        "A large white table with items on its surface",
+        "A conveyor belt system with boxes on it",
+        "Loading dock doors (numbered 11, 12, 64, 65)",
+        "Metal storage racks",
+        "A small blue office/structure",
+        "A digital timestamp \"01/10/2014 10:45:12 AM\""
+      ],
+      "uncertainty": [
+        "The exact nature of the items being sorted or packed on the table is unclear",
+        "The specific contents of the sealed boxes are unknown",
+        "The purpose of the small blue office/structure is not explicitly visible",
+        "Whether the loading dock doors are open or closed is not fully clear for all of them"
+      ]
+    },
+    {
+      "frame_index": 18,
+      "timestamp_seconds": 3.0,
+      "change_score": 0.00098,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000003",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000003.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 6,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7345,
+          "bbox_xyxy": [
+            774.99,
+            491.18,
+            866.39,
+            786.22
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4176,
+          "bbox_xyxy": [
+            1283.51,
+            681.19,
+            1455.48,
+            841.84
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3864,
+          "bbox_xyxy": [
+            1116.46,
+            255.93,
+            1162.11,
+            408.54
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3463,
+          "bbox_xyxy": [
+            1271.0,
+            562.06,
+            1395.36,
+            689.89
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.2764,
+          "bbox_xyxy": [
+            624.62,
+            307.17,
+            704.89,
+            382.71
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2661,
+          "bbox_xyxy": [
+            1019.35,
+            399.56,
+            1087.44,
+            552.42
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and workers",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "An overhead view of a large indoor warehouse or loading dock area, featuring multiple individuals, numerous cardboard boxes, and various pieces of equipment.",
+        "scene_type": "Warehouse or loading dock",
+        "activities": [
+          "Multiple individuals are gathered around a long table, appearing to sort or process items.",
+          "People are handling and stacking cardboard boxes.",
+          "A person is standing near a pallet jack."
+        ],
+        "safety_concerns": [
+          "Clutter of stacked boxes and equipment on the floor could present tripping or obstruction hazards."
+        ],
+        "visible_evidence": [
+          "Numerous cardboard boxes, many stacked on wooden pallets.",
+          "Several individuals, some wearing orange high-visibility vests.",
+          "A long white table with items spread across its surface.",
+          "A yellow pallet jack.",
+          "Multiple loading dock doors, some numbered (e.g., 11, 12, 64, 65).",
+          "Metal shelving units and racks.",
+          "A blue modular office or storage unit.",
+          "A conveyor belt system with boxes on it."
+        ],
+        "uncertainty": [
+          "The specific contents of the boxes are not visible.",
+          "The exact nature of the items being handled on the table is not clear.",
+          "The precise tasks or roles of all individuals are not fully discernible."
+        ]
+      },
+      "scene_description": "An overhead view of a large indoor warehouse or loading dock area, featuring multiple individuals, numerous cardboard boxes, and various pieces of equipment.",
+      "scene_type": "Warehouse or loading dock",
+      "activities": [
+        "Multiple individuals are gathered around a long table, appearing to sort or process items.",
+        "People are handling and stacking cardboard boxes.",
+        "A person is standing near a pallet jack."
+      ],
+      "safety_concerns": [
+        "Clutter of stacked boxes and equipment on the floor could present tripping or obstruction hazards."
+      ],
+      "visible_evidence": [
+        "Numerous cardboard boxes, many stacked on wooden pallets.",
+        "Several individuals, some wearing orange high-visibility vests.",
+        "A long white table with items spread across its surface.",
+        "A yellow pallet jack.",
+        "Multiple loading dock doors, some numbered (e.g., 11, 12, 64, 65).",
+        "Metal shelving units and racks.",
+        "A blue modular office or storage unit.",
+        "A conveyor belt system with boxes on it."
+      ],
+      "uncertainty": [
+        "The specific contents of the boxes are not visible.",
+        "The exact nature of the items being handled on the table is not clear.",
+        "The precise tasks or roles of all individuals are not fully discernible."
+      ]
+    },
+    {
+      "frame_index": 24,
+      "timestamp_seconds": 4.0,
+      "change_score": 0.00159,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000004",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000004.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 10,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7651,
+          "bbox_xyxy": [
+            780.25,
+            531.22,
+            866.09,
+            786.51
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4379,
+          "bbox_xyxy": [
+            1272.4,
+            562.06,
+            1395.19,
+            689.53
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3717,
+          "bbox_xyxy": [
+            1282.78,
+            680.8,
+            1456.2,
+            842.47
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3598,
+          "bbox_xyxy": [
+            613.85,
+            307.07,
+            704.1,
+            382.45
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.344,
+          "bbox_xyxy": [
+            1012.08,
+            353.2,
+            1075.2,
+            537.79
+          ]
+        },
+        {
+          "label": "boat",
+          "confidence": 0.2931,
+          "bbox_xyxy": [
+            469.46,
+            798.93,
+            944.06,
+            1074.48
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2816,
+          "bbox_xyxy": [
+            1116.54,
+            255.28,
+            1161.52,
+            362.68
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2662,
+          "bbox_xyxy": [
+            1499.32,
+            480.41,
+            1739.94,
+            759.36
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2509,
+          "bbox_xyxy": [
+            1011.17,
+            353.59,
+            1075.19,
+            483.28
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.2504,
+          "bbox_xyxy": [
+            567.2,
+            302.21,
+            704.97,
+            380.65
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "The scene depicts a large indoor warehouse or distribution center with a concrete floor. Numerous cardboard boxes are visible, some stacked on wooden pallets, others on the floor, and some moving along a conveyor belt system on the right side. Several loading dock doors are visible in the background, some numbered. Metal shelving units and racks are present. In the center, a long white table is set up where multiple individuals are engaged in activities involving various items. A yellow pallet jack is parked on the floor. A blue office-like structure is also visible.",
+        "scene_type": "Warehouse",
+        "activities": [
+          "Multiple individuals are working at a long table, appearing to sort, inspect, or package items.",
+          "Boxes are being handled, stacked, and moved, including on a conveyor belt system.",
+          "People are moving within the warehouse space."
+        ],
+        "safety_concerns": [
+          "The presence of numerous boxes and equipment on the floor could create tripping hazards.",
+          "Potential for strain or injury from lifting and moving boxes if proper techniques are not used.",
+          "Operation of equipment like the pallet jack could pose a hazard if not done carefully."
+        ],
+        "visible_evidence": [
+          "Multiple individuals (at least 6-7 clearly visible).",
+          "Numerous cardboard boxes, some open, some sealed, some stacked.",
+          "Wooden pallets.",
+          "A yellow pallet jack.",
+          "A long white table with items on its surface.",
+          "Metal shelving units and racks.",
+          "Loading dock doors (numbered 11, 12, 64, 65).",
+          "A blue portable office or storage unit.",
+          "A conveyor belt system with boxes on it.",
+          "Some individuals are wearing high-visibility orange vests.",
+          "A red bow decoration on a pillar."
+        ],
+        "uncertainty": [
+          "The exact contents of the sealed boxes are unknown.",
+          "The specific nature of the items being handled on the table is not fully discernible.",
+          "The precise tasks being performed by each individual are not entirely clear.",
+          "The YOLO detections of 'truck', 'car', and 'boat' are likely misclassifications of boxes or other warehouse equipment, given the visual context."
+        ]
+      },
+      "scene_description": "The scene depicts a large indoor warehouse or distribution center with a concrete floor. Numerous cardboard boxes are visible, some stacked on wooden pallets, others on the floor, and some moving along a conveyor belt system on the right side. Several loading dock doors are visible in the background, some numbered. Metal shelving units and racks are present. In the center, a long white table is set up where multiple individuals are engaged in activities involving various items. A yellow pallet jack is parked on the floor. A blue office-like structure is also visible.",
+      "scene_type": "Warehouse",
+      "activities": [
+        "Multiple individuals are working at a long table, appearing to sort, inspect, or package items.",
+        "Boxes are being handled, stacked, and moved, including on a conveyor belt system.",
+        "People are moving within the warehouse space."
+      ],
+      "safety_concerns": [
+        "The presence of numerous boxes and equipment on the floor could create tripping hazards.",
+        "Potential for strain or injury from lifting and moving boxes if proper techniques are not used.",
+        "Operation of equipment like the pallet jack could pose a hazard if not done carefully."
+      ],
+      "visible_evidence": [
+        "Multiple individuals (at least 6-7 clearly visible).",
+        "Numerous cardboard boxes, some open, some sealed, some stacked.",
+        "Wooden pallets.",
+        "A yellow pallet jack.",
+        "A long white table with items on its surface.",
+        "Metal shelving units and racks.",
+        "Loading dock doors (numbered 11, 12, 64, 65).",
+        "A blue portable office or storage unit.",
+        "A conveyor belt system with boxes on it.",
+        "Some individuals are wearing high-visibility orange vests.",
+        "A red bow decoration on a pillar."
+      ],
+      "uncertainty": [
+        "The exact contents of the sealed boxes are unknown.",
+        "The specific nature of the items being handled on the table is not fully discernible.",
+        "The precise tasks being performed by each individual are not entirely clear.",
+        "The YOLO detections of 'truck', 'car', and 'boat' are likely misclassifications of boxes or other warehouse equipment, given the visual context."
+      ]
+    },
+    {
+      "frame_index": 30,
+      "timestamp_seconds": 5.0,
+      "change_score": 0.00079,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000005",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000005.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 11,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7898,
+          "bbox_xyxy": [
+            783.62,
+            532.14,
+            867.74,
+            783.66
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6361,
+          "bbox_xyxy": [
+            1854.01,
+            377.19,
+            1910.81,
+            503.19
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.447,
+          "bbox_xyxy": [
+            1282.34,
+            680.56,
+            1456.3,
+            842.59
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4291,
+          "bbox_xyxy": [
+            1008.62,
+            345.29,
+            1072.53,
+            541.76
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4228,
+          "bbox_xyxy": [
+            1271.46,
+            561.61,
+            1396.53,
+            690.6
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3921,
+          "bbox_xyxy": [
+            601.14,
+            306.05,
+            703.19,
+            381.83
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3628,
+          "bbox_xyxy": [
+            566.09,
+            301.94,
+            704.02,
+            380.4
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3444,
+          "bbox_xyxy": [
+            724.01,
+            453.9,
+            832.16,
+            677.56
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2952,
+          "bbox_xyxy": [
+            723.34,
+            470.47,
+            795.29,
+            670.19
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2614,
+          "bbox_xyxy": [
+            1122.0,
+            341.61,
+            1213.74,
+            466.73
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2613,
+          "bbox_xyxy": [
+            1170.79,
+            560.15,
+            1297.49,
+            693.85
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "A busy warehouse or distribution center with multiple individuals engaged in sorting, packaging, and moving goods. The floor is covered with numerous cardboard boxes, some stacked on pallets, and a conveyor belt system is in use.",
+        "scene_type": "Warehouse",
+        "activities": [
+          "Sorting items at a large table",
+          "Packaging items",
+          "Moving boxes on a conveyor belt",
+          "General material handling"
+        ],
+        "safety_concerns": [
+          "Potential tripping hazards due to boxes and equipment on the floor",
+          "Ergonomic risks from lifting and moving boxes"
+        ],
+        "visible_evidence": [
+          "Multiple individuals (at least 8-10 visible)",
+          "Numerous cardboard boxes, some stacked on pallets",
+          "A large white table with items being sorted/packaged",
+          "A conveyor belt system with boxes",
+          "A yellow pallet jack",
+          "Industrial shelving and loading dock doors",
+          "Individuals wearing safety vests (orange, green)",
+          "A blue office/storage unit"
+        ],
+        "uncertainty": [
+          "The specific contents of the boxes",
+          "The exact purpose of the items being sorted at the table",
+          "Whether the pallet jack is currently in use or just parked",
+          "The precise roles of all individuals"
+        ]
+      },
+      "scene_description": "A busy warehouse or distribution center with multiple individuals engaged in sorting, packaging, and moving goods. The floor is covered with numerous cardboard boxes, some stacked on pallets, and a conveyor belt system is in use.",
+      "scene_type": "Warehouse",
+      "activities": [
+        "Sorting items at a large table",
+        "Packaging items",
+        "Moving boxes on a conveyor belt",
+        "General material handling"
+      ],
+      "safety_concerns": [
+        "Potential tripping hazards due to boxes and equipment on the floor",
+        "Ergonomic risks from lifting and moving boxes"
+      ],
+      "visible_evidence": [
+        "Multiple individuals (at least 8-10 visible)",
+        "Numerous cardboard boxes, some stacked on pallets",
+        "A large white table with items being sorted/packaged",
+        "A conveyor belt system with boxes",
+        "A yellow pallet jack",
+        "Industrial shelving and loading dock doors",
+        "Individuals wearing safety vests (orange, green)",
+        "A blue office/storage unit"
+      ],
+      "uncertainty": [
+        "The specific contents of the boxes",
+        "The exact purpose of the items being sorted at the table",
+        "Whether the pallet jack is currently in use or just parked",
+        "The precise roles of all individuals"
+      ]
+    },
+    {
+      "frame_index": 36,
+      "timestamp_seconds": 6.0,
+      "change_score": 0.00142,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000006",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000006.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 8,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7987,
+          "bbox_xyxy": [
+            784.18,
+            531.69,
+            868.0,
+            780.12
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4498,
+          "bbox_xyxy": [
+            1281.48,
+            679.69,
+            1456.14,
+            843.05
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3976,
+          "bbox_xyxy": [
+            1272.72,
+            561.95,
+            1396.67,
+            690.2
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3751,
+          "bbox_xyxy": [
+            724.7,
+            464.76,
+            791.22,
+            716.8
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3272,
+          "bbox_xyxy": [
+            1008.83,
+            353.55,
+            1068.7,
+            541.57
+          ]
+        },
+        {
+          "label": "suitcase",
+          "confidence": 0.3049,
+          "bbox_xyxy": [
+            704.31,
+            740.97,
+            790.7,
+            833.98
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2645,
+          "bbox_xyxy": [
+            1178.71,
+            351.8,
+            1239.11,
+            458.51
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.2511,
+          "bbox_xyxy": [
+            565.52,
+            298.57,
+            702.79,
+            382.2
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "The scene depicts an indoor warehouse or distribution center with multiple individuals engaged in various tasks. The area is filled with numerous cardboard boxes, some stacked on pallets, and others on conveyor belts. A large central table is present where several people appear to be sorting or packing items. Loading dock doors are visible in the background.",
+        "scene_type": "warehouse",
+        "activities": [
+          "Sorting items at a large table",
+          "Packing items into boxes",
+          "Moving or handling cardboard boxes",
+          "Operating within a warehouse environment"
+        ],
+        "safety_concerns": [
+          "Potential tripping hazards due to numerous boxes and equipment on the floor",
+          "Risk of strain from lifting and moving boxes"
+        ],
+        "visible_evidence": [
+          "Multiple individuals, some wearing high-visibility orange vests",
+          "Numerous cardboard boxes of various sizes",
+          "Wooden pallets",
+          "A hand pallet truck (pallet jack)",
+          "A large work table with items on its surface",
+          "Conveyor belt systems with boxes",
+          "Warehouse racking and shelving structures",
+          "Loading dock doors",
+          "A blue portable office or storage unit"
+        ],
+        "uncertainty": [
+          "The specific contents of the boxes or the items being sorted at the table are not discernible",
+          "The exact purpose of each individual's task beyond general handling and sorting of goods is unclear"
+        ]
+      },
+      "scene_description": "The scene depicts an indoor warehouse or distribution center with multiple individuals engaged in various tasks. The area is filled with numerous cardboard boxes, some stacked on pallets, and others on conveyor belts. A large central table is present where several people appear to be sorting or packing items. Loading dock doors are visible in the background.",
+      "scene_type": "warehouse",
+      "activities": [
+        "Sorting items at a large table",
+        "Packing items into boxes",
+        "Moving or handling cardboard boxes",
+        "Operating within a warehouse environment"
+      ],
+      "safety_concerns": [
+        "Potential tripping hazards due to numerous boxes and equipment on the floor",
+        "Risk of strain from lifting and moving boxes"
+      ],
+      "visible_evidence": [
+        "Multiple individuals, some wearing high-visibility orange vests",
+        "Numerous cardboard boxes of various sizes",
+        "Wooden pallets",
+        "A hand pallet truck (pallet jack)",
+        "A large work table with items on its surface",
+        "Conveyor belt systems with boxes",
+        "Warehouse racking and shelving structures",
+        "Loading dock doors",
+        "A blue portable office or storage unit"
+      ],
+      "uncertainty": [
+        "The specific contents of the boxes or the items being sorted at the table are not discernible",
+        "The exact purpose of each individual's task beyond general handling and sorting of goods is unclear"
+      ]
+    },
+    {
+      "frame_index": 42,
+      "timestamp_seconds": 7.0,
+      "change_score": 0.00092,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000007",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000007.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 7,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7388,
+          "bbox_xyxy": [
+            783.86,
+            531.44,
+            868.11,
+            781.75
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.5776,
+          "bbox_xyxy": [
+            1281.72,
+            679.07,
+            1456.2,
+            843.65
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4752,
+          "bbox_xyxy": [
+            1172.2,
+            561.05,
+            1395.54,
+            692.99
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3401,
+          "bbox_xyxy": [
+            1498.86,
+            479.59,
+            1740.64,
+            760.75
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3084,
+          "bbox_xyxy": [
+            725.09,
+            476.84,
+            791.39,
+            686.05
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.2959,
+          "bbox_xyxy": [
+            565.28,
+            299.07,
+            702.86,
+            382.33
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2823,
+          "bbox_xyxy": [
+            1011.32,
+            360.84,
+            1075.1,
+            516.35
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "The scene depicts an indoor warehouse or loading dock area with a concrete floor, numerous cardboard boxes, and several individuals engaged in various tasks. A large table is central to some activity, and a conveyor belt system is visible on the right side. Loading dock doors are present in the background.",
+        "scene_type": "Warehouse/Loading Dock",
+        "activities": [
+          "Sorting or packaging items at a large table",
+          "Handling and moving cardboard boxes",
+          "Working near a conveyor belt system",
+          "Operating a hand pallet truck"
+        ],
+        "safety_concerns": [
+          "Cluttered walkways due to numerous boxes and pallets on the floor, potentially creating tripping hazards",
+          "Potential for objects falling from stacked boxes if not properly secured"
+        ],
+        "visible_evidence": [
+          "Multiple individuals, some wearing high-visibility vests",
+          "Numerous cardboard boxes, some stacked on pallets",
+          "A large table with items on its surface",
+          "A hand pallet truck (pallet jack)",
+          "A conveyor belt system with boxes on it",
+          "Loading dock doors in the background",
+          "Metal shelving units",
+          "A blue office-like structure"
+        ],
+        "uncertainty": [
+          "The exact nature of the items being sorted or packaged at the table is unclear",
+          "The specific type or function of some large objects in the background (identified as 'truck' by YOLO) is uncertain; they appear to be part of the conveyor system or stacked goods rather than vehicles",
+          "A small, indistinct object in the far background (identified as 'car' by YOLO) is present, but its identity is uncertain"
+        ]
+      },
+      "scene_description": "The scene depicts an indoor warehouse or loading dock area with a concrete floor, numerous cardboard boxes, and several individuals engaged in various tasks. A large table is central to some activity, and a conveyor belt system is visible on the right side. Loading dock doors are present in the background.",
+      "scene_type": "Warehouse/Loading Dock",
+      "activities": [
+        "Sorting or packaging items at a large table",
+        "Handling and moving cardboard boxes",
+        "Working near a conveyor belt system",
+        "Operating a hand pallet truck"
+      ],
+      "safety_concerns": [
+        "Cluttered walkways due to numerous boxes and pallets on the floor, potentially creating tripping hazards",
+        "Potential for objects falling from stacked boxes if not properly secured"
+      ],
+      "visible_evidence": [
+        "Multiple individuals, some wearing high-visibility vests",
+        "Numerous cardboard boxes, some stacked on pallets",
+        "A large table with items on its surface",
+        "A hand pallet truck (pallet jack)",
+        "A conveyor belt system with boxes on it",
+        "Loading dock doors in the background",
+        "Metal shelving units",
+        "A blue office-like structure"
+      ],
+      "uncertainty": [
+        "The exact nature of the items being sorted or packaged at the table is unclear",
+        "The specific type or function of some large objects in the background (identified as 'truck' by YOLO) is uncertain; they appear to be part of the conveyor system or stacked goods rather than vehicles",
+        "A small, indistinct object in the far background (identified as 'car' by YOLO) is present, but its identity is uncertain"
+      ]
+    },
+    {
+      "frame_index": 48,
+      "timestamp_seconds": 8.0,
+      "change_score": 0.00207,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000008",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000008.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 9,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7509,
+          "bbox_xyxy": [
+            783.44,
+            534.31,
+            869.09,
+            781.02
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4693,
+          "bbox_xyxy": [
+            711.16,
+            441.62,
+            801.96,
+            687.83
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4577,
+          "bbox_xyxy": [
+            1282.99,
+            681.97,
+            1457.12,
+            843.17
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4463,
+          "bbox_xyxy": [
+            1177.72,
+            352.95,
+            1251.1,
+            446.45
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3394,
+          "bbox_xyxy": [
+            589.07,
+            305.67,
+            703.52,
+            382.43
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3369,
+          "bbox_xyxy": [
+            1271.53,
+            561.57,
+            1397.14,
+            689.3
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3008,
+          "bbox_xyxy": [
+            1115.56,
+            252.29,
+            1162.27,
+            397.98
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.288,
+          "bbox_xyxy": [
+            982.7,
+            319.23,
+            1057.9,
+            429.79
+          ]
+        },
+        {
+          "label": "suitcase",
+          "confidence": 0.2812,
+          "bbox_xyxy": [
+            703.49,
+            740.2,
+            790.14,
+            833.81
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and people in the background",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "An overhead view of a busy warehouse or distribution center, showing multiple individuals, numerous cardboard boxes, pallets, and several loading dock doors.",
+        "scene_type": "Warehouse",
+        "activities": [
+          "Sorting or packing items at a large white table",
+          "Moving and stacking cardboard boxes on pallets",
+          "Operating a conveyor belt system with boxes",
+          "Loading or unloading activities involving vehicles near dock doors"
+        ],
+        "safety_concerns": [
+          "Potential tripping hazards due to boxes and equipment on the floor",
+          "Risk of injury from moving heavy boxes or operating equipment",
+          "Presence of vehicles (trucks, forklifts) in proximity to pedestrians"
+        ],
+        "visible_evidence": [
+          "Multiple individuals, many wearing orange safety vests",
+          "Numerous cardboard boxes, some stacked on pallets, some open",
+          "A yellow pallet jack on the floor",
+          "A large white table with various items spread across it",
+          "Several loading dock doors, some numbered (e.g., 12, 64, 65)",
+          "A conveyor belt system with boxes on it",
+          "Vehicles (trucks, forklifts) near the loading docks",
+          "Metal shelving units and racks",
+          "A blue shed-like structure"
+        ],
+        "uncertainty": [
+          "The specific items being handled or sorted on the table are not clearly identifiable",
+          "The exact contents of the numerous closed boxes are unknown",
+          "One detected 'suitcase' appears visually to be a box or container, leading to uncertainty about its true nature"
+        ]
+      },
+      "scene_description": "An overhead view of a busy warehouse or distribution center, showing multiple individuals, numerous cardboard boxes, pallets, and several loading dock doors.",
+      "scene_type": "Warehouse",
+      "activities": [
+        "Sorting or packing items at a large white table",
+        "Moving and stacking cardboard boxes on pallets",
+        "Operating a conveyor belt system with boxes",
+        "Loading or unloading activities involving vehicles near dock doors"
+      ],
+      "safety_concerns": [
+        "Potential tripping hazards due to boxes and equipment on the floor",
+        "Risk of injury from moving heavy boxes or operating equipment",
+        "Presence of vehicles (trucks, forklifts) in proximity to pedestrians"
+      ],
+      "visible_evidence": [
+        "Multiple individuals, many wearing orange safety vests",
+        "Numerous cardboard boxes, some stacked on pallets, some open",
+        "A yellow pallet jack on the floor",
+        "A large white table with various items spread across it",
+        "Several loading dock doors, some numbered (e.g., 12, 64, 65)",
+        "A conveyor belt system with boxes on it",
+        "Vehicles (trucks, forklifts) near the loading docks",
+        "Metal shelving units and racks",
+        "A blue shed-like structure"
+      ],
+      "uncertainty": [
+        "The specific items being handled or sorted on the table are not clearly identifiable",
+        "The exact contents of the numerous closed boxes are unknown",
+        "One detected 'suitcase' appears visually to be a box or container, leading to uncertainty about its true nature"
+      ]
+    },
+    {
+      "frame_index": 54,
+      "timestamp_seconds": 9.0,
+      "change_score": 0.00044,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000009",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000009.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 8,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7457,
+          "bbox_xyxy": [
+            782.19,
+            534.59,
+            865.85,
+            784.31
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.513,
+          "bbox_xyxy": [
+            1281.96,
+            681.26,
+            1457.63,
+            843.53
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.502,
+          "bbox_xyxy": [
+            703.8,
+            451.51,
+            779.53,
+            680.75
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4575,
+          "bbox_xyxy": [
+            1270.15,
+            561.3,
+            1397.67,
+            689.46
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3267,
+          "bbox_xyxy": [
+            584.21,
+            305.63,
+            703.26,
+            382.61
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.2808,
+          "bbox_xyxy": [
+            308.89,
+            455.91,
+            472.29,
+            583.38
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2734,
+          "bbox_xyxy": [
+            1116.96,
+            252.03,
+            1162.06,
+            388.88
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2698,
+          "bbox_xyxy": [
+            1170.44,
+            559.89,
+            1297.69,
+            691.83
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "An overhead view of a large indoor warehouse or logistics facility with multiple loading dock doors in the background. Numerous cardboard boxes are stacked on pallets, on the floor, and on conveyor belts. Several individuals, many wearing high-visibility vests, are actively engaged in sorting and moving items around a large central table and near conveyor systems.",
+        "scene_type": "Warehouse/Logistics Facility",
+        "activities": [
+          "Sorting items on a large table",
+          "Packing or preparing items for shipment",
+          "Moving goods using pallets and potentially a pallet jack",
+          "Working at conveyor belt systems"
+        ],
+        "safety_concerns": [
+          "Clutter and potential tripping hazards from boxes on the floor",
+          "Potential for items to fall from tall stacks of boxes",
+          "Some individuals are not wearing high-visibility vests in an active work area"
+        ],
+        "visible_evidence": [
+          "Multiple individuals (at least 7 visible)",
+          "Numerous cardboard boxes, some open, some sealed",
+          "Pallets",
+          "A pallet jack",
+          "A large white table with items on it",
+          "Conveyor belt systems with boxes",
+          "Loading dock doors (numbered 11, 12, 64, 65)",
+          "Metal shelving/racks",
+          "A small blue office/storage unit",
+          "A digital timestamp '01/10/2014 10:45:19 AM'",
+          "An 'IPC' watermark"
+        ],
+        "uncertainty": [
+          "The exact nature of the items being sorted on the table",
+          "The specific contents of the boxes",
+          "The specific roles of each individual",
+          "Whether the pallet jack is currently in use or parked"
+        ]
+      },
+      "scene_description": "An overhead view of a large indoor warehouse or logistics facility with multiple loading dock doors in the background. Numerous cardboard boxes are stacked on pallets, on the floor, and on conveyor belts. Several individuals, many wearing high-visibility vests, are actively engaged in sorting and moving items around a large central table and near conveyor systems.",
+      "scene_type": "Warehouse/Logistics Facility",
+      "activities": [
+        "Sorting items on a large table",
+        "Packing or preparing items for shipment",
+        "Moving goods using pallets and potentially a pallet jack",
+        "Working at conveyor belt systems"
+      ],
+      "safety_concerns": [
+        "Clutter and potential tripping hazards from boxes on the floor",
+        "Potential for items to fall from tall stacks of boxes",
+        "Some individuals are not wearing high-visibility vests in an active work area"
+      ],
+      "visible_evidence": [
+        "Multiple individuals (at least 7 visible)",
+        "Numerous cardboard boxes, some open, some sealed",
+        "Pallets",
+        "A pallet jack",
+        "A large white table with items on it",
+        "Conveyor belt systems with boxes",
+        "Loading dock doors (numbered 11, 12, 64, 65)",
+        "Metal shelving/racks",
+        "A small blue office/storage unit",
+        "A digital timestamp '01/10/2014 10:45:19 AM'",
+        "An 'IPC' watermark"
+      ],
+      "uncertainty": [
+        "The exact nature of the items being sorted on the table",
+        "The specific contents of the boxes",
+        "The specific roles of each individual",
+        "Whether the pallet jack is currently in use or parked"
+      ]
+    },
+    {
+      "frame_index": 60,
+      "timestamp_seconds": 10.0,
+      "change_score": 0.00153,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000010",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000010.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 11,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7532,
+          "bbox_xyxy": [
+            781.85,
+            534.34,
+            865.54,
+            783.63
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5199,
+          "bbox_xyxy": [
+            709.69,
+            465.5,
+            782.4,
+            686.39
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4522,
+          "bbox_xyxy": [
+            1281.31,
+            681.22,
+            1457.16,
+            842.96
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3888,
+          "bbox_xyxy": [
+            1270.65,
+            561.0,
+            1397.44,
+            688.43
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2769,
+          "bbox_xyxy": [
+            1114.56,
+            252.09,
+            1161.85,
+            396.56
+          ]
+        },
+        {
+          "label": "suitcase",
+          "confidence": 0.2735,
+          "bbox_xyxy": [
+            702.9,
+            739.16,
+            790.38,
+            833.87
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.2718,
+          "bbox_xyxy": [
+            587.08,
+            304.35,
+            703.32,
+            383.17
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2678,
+          "bbox_xyxy": [
+            1172.9,
+            333.12,
+            1239.18,
+            441.79
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.2653,
+          "bbox_xyxy": [
+            309.15,
+            456.14,
+            472.28,
+            584.62
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2533,
+          "bbox_xyxy": [
+            1169.97,
+            559.76,
+            1294.72,
+            692.59
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2503,
+          "bbox_xyxy": [
+            981.94,
+            43.14,
+            1157.25,
+            208.26
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "A large indoor warehouse or distribution center is depicted, filled with numerous cardboard boxes, many stacked on wooden pallets. Several individuals are present, some engaged in sorting or packing activities at a large central table, while others are near a conveyor belt system. Loading dock doors are visible in the background.",
+        "scene_type": "Warehouse",
+        "activities": [
+          "Sorting items at a large table",
+          "Packing items at a large table",
+          "Handling or moving boxes",
+          "Working near a conveyor belt system"
+        ],
+        "safety_concerns": [
+          "Potential tripping hazards due to boxes and pallets on the floor",
+          "Risk of falling objects from stacked boxes if not properly secured"
+        ],
+        "visible_evidence": [
+          "Numerous cardboard boxes, many stacked on wooden pallets",
+          "A long conveyor belt system with boxes on it",
+          "Multiple individuals, some wearing orange high-visibility vests",
+          "A large table with various items being sorted or packed",
+          "A yellow pallet jack on the floor",
+          "Metal shelving or racks",
+          "Loading dock doors, some numbered (e.g., 12, 64, 65)",
+          "A blue portable office or shed structure",
+          "Date and timestamp '01/10/2014 10:45:20 AM' visible"
+        ],
+        "uncertainty": [
+          "The exact nature of the items being sorted or packed on the table is unclear",
+          "The contents of the numerous cardboard boxes are unknown"
+        ]
+      },
+      "scene_description": "A large indoor warehouse or distribution center is depicted, filled with numerous cardboard boxes, many stacked on wooden pallets. Several individuals are present, some engaged in sorting or packing activities at a large central table, while others are near a conveyor belt system. Loading dock doors are visible in the background.",
+      "scene_type": "Warehouse",
+      "activities": [
+        "Sorting items at a large table",
+        "Packing items at a large table",
+        "Handling or moving boxes",
+        "Working near a conveyor belt system"
+      ],
+      "safety_concerns": [
+        "Potential tripping hazards due to boxes and pallets on the floor",
+        "Risk of falling objects from stacked boxes if not properly secured"
+      ],
+      "visible_evidence": [
+        "Numerous cardboard boxes, many stacked on wooden pallets",
+        "A long conveyor belt system with boxes on it",
+        "Multiple individuals, some wearing orange high-visibility vests",
+        "A large table with various items being sorted or packed",
+        "A yellow pallet jack on the floor",
+        "Metal shelving or racks",
+        "Loading dock doors, some numbered (e.g., 12, 64, 65)",
+        "A blue portable office or shed structure",
+        "Date and timestamp '01/10/2014 10:45:20 AM' visible"
+      ],
+      "uncertainty": [
+        "The exact nature of the items being sorted or packed on the table is unclear",
+        "The contents of the numerous cardboard boxes are unknown"
+      ]
+    },
+    {
+      "frame_index": 66,
+      "timestamp_seconds": 11.0,
+      "change_score": 0.0008,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000011",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000011.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 9,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7188,
+          "bbox_xyxy": [
+            781.69,
+            534.56,
+            866.51,
+            783.19
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4613,
+          "bbox_xyxy": [
+            710.86,
+            458.98,
+            784.97,
+            679.84
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4146,
+          "bbox_xyxy": [
+            1282.13,
+            681.71,
+            1456.13,
+            842.52
+          ]
+        },
+        {
+          "label": "suitcase",
+          "confidence": 0.3988,
+          "bbox_xyxy": [
+            702.42,
+            737.88,
+            791.43,
+            834.37
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3569,
+          "bbox_xyxy": [
+            1171.3,
+            353.03,
+            1264.93,
+            446.06
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3347,
+          "bbox_xyxy": [
+            566.82,
+            298.26,
+            704.51,
+            383.61
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3018,
+          "bbox_xyxy": [
+            974.42,
+            357.76,
+            1057.5,
+            469.85
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2997,
+          "bbox_xyxy": [
+            1272.38,
+            561.26,
+            1396.81,
+            688.46
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2528,
+          "bbox_xyxy": [
+            1170.57,
+            559.53,
+            1294.66,
+            693.62
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "fallback_blip_yolo",
+      "gemini_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 4h41m11.536858468s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16871s'}]}}",
+      "gemini_scene": {
+        "scene_description": "a warehouse with boxes and boxes on the floor",
+        "scene_type": "unknown",
+        "activities": [],
+        "safety_concerns": [],
+        "visible_evidence": [
+          "YOLO detected person (confidence 0.7188)",
+          "YOLO detected person (confidence 0.4613)",
+          "YOLO detected truck (confidence 0.4146)",
+          "YOLO detected suitcase (confidence 0.3988)",
+          "YOLO detected person (confidence 0.3569)",
+          "YOLO detected car (confidence 0.3347)",
+          "YOLO detected person (confidence 0.3018)",
+          "YOLO detected truck (confidence 0.2997)",
+          "YOLO detected truck (confidence 0.2528)"
+        ],
+        "uncertainty": [
+          "Gemini failed; fallback uses BLIP caption and YOLO detections."
+        ]
+      },
+      "scene_description": "a warehouse with boxes and boxes on the floor",
+      "scene_type": "unknown",
+      "activities": [],
+      "safety_concerns": [],
+      "visible_evidence": [
+        "YOLO detected person (confidence 0.7188)",
+        "YOLO detected person (confidence 0.4613)",
+        "YOLO detected truck (confidence 0.4146)",
+        "YOLO detected suitcase (confidence 0.3988)",
+        "YOLO detected person (confidence 0.3569)",
+        "YOLO detected car (confidence 0.3347)",
+        "YOLO detected person (confidence 0.3018)",
+        "YOLO detected truck (confidence 0.2997)",
+        "YOLO detected truck (confidence 0.2528)"
+      ],
+      "uncertainty": [
+        "Gemini failed; fallback uses BLIP caption and YOLO detections."
+      ]
+    },
+    {
+      "frame_index": 72,
+      "timestamp_seconds": 12.0,
+      "change_score": 0.00114,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000012",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000012.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 8,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7331,
+          "bbox_xyxy": [
+            779.33,
+            535.96,
+            866.02,
+            785.63
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4808,
+          "bbox_xyxy": [
+            711.07,
+            463.96,
+            783.24,
+            683.07
+          ]
+        },
+        {
+          "label": "suitcase",
+          "confidence": 0.4218,
+          "bbox_xyxy": [
+            702.68,
+            737.55,
+            791.4,
+            834.05
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3649,
+          "bbox_xyxy": [
+            1283.29,
+            682.0,
+            1456.39,
+            842.33
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.3266,
+          "bbox_xyxy": [
+            567.04,
+            299.41,
+            704.06,
+            381.97
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3175,
+          "bbox_xyxy": [
+            1164.05,
+            352.24,
+            1229.22,
+            444.52
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2971,
+          "bbox_xyxy": [
+            1271.44,
+            560.93,
+            1397.0,
+            688.6
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2726,
+          "bbox_xyxy": [
+            766.89,
+            229.38,
+            917.68,
+            373.11
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "A large indoor warehouse or loading dock area with a concrete floor. Multiple individuals are present, many wearing high-visibility vests. Numerous cardboard boxes are stacked on pallets and on the floor. Several overhead loading dock doors are visible in the background. A large white table is centrally located, surrounded by people, with various items on its surface. Material handling equipment, including a pallet jack and a conveyor belt system, is visible.",
+        "scene_type": "Warehouse",
+        "activities": [
+          "Individuals are gathered around a large table, appearing to sort or process items.",
+          "People are moving and stacking cardboard boxes.",
+          "Boxes are being transported on a conveyor belt.",
+          "A person is operating a pallet jack."
+        ],
+        "safety_concerns": [
+          "Potential tripping hazards due to boxes and equipment on the floor.",
+          "Risk of injury from lifting or moving heavy boxes."
+        ],
+        "visible_evidence": [
+          "Multiple individuals, some wearing high-visibility vests.",
+          "Numerous cardboard boxes of various sizes.",
+          "Wooden pallets.",
+          "A large white table with items on its surface.",
+          "A yellow and black pallet jack.",
+          "A conveyor belt system with boxes on it.",
+          "Overhead loading dock doors.",
+          "Metal storage racks.",
+          "A digital timestamp '01/10/2014 10:45:22 AM'."
+        ],
+        "uncertainty": [
+          "The specific contents of the boxes are not discernible.",
+          "The exact nature of the items on the table is unclear.",
+          "The precise purpose of the activities (e.g., packing, shipping, inventory) is not explicitly visible."
+        ]
+      },
+      "scene_description": "A large indoor warehouse or loading dock area with a concrete floor. Multiple individuals are present, many wearing high-visibility vests. Numerous cardboard boxes are stacked on pallets and on the floor. Several overhead loading dock doors are visible in the background. A large white table is centrally located, surrounded by people, with various items on its surface. Material handling equipment, including a pallet jack and a conveyor belt system, is visible.",
+      "scene_type": "Warehouse",
+      "activities": [
+        "Individuals are gathered around a large table, appearing to sort or process items.",
+        "People are moving and stacking cardboard boxes.",
+        "Boxes are being transported on a conveyor belt.",
+        "A person is operating a pallet jack."
+      ],
+      "safety_concerns": [
+        "Potential tripping hazards due to boxes and equipment on the floor.",
+        "Risk of injury from lifting or moving heavy boxes."
+      ],
+      "visible_evidence": [
+        "Multiple individuals, some wearing high-visibility vests.",
+        "Numerous cardboard boxes of various sizes.",
+        "Wooden pallets.",
+        "A large white table with items on its surface.",
+        "A yellow and black pallet jack.",
+        "A conveyor belt system with boxes on it.",
+        "Overhead loading dock doors.",
+        "Metal storage racks.",
+        "A digital timestamp '01/10/2014 10:45:22 AM'."
+      ],
+      "uncertainty": [
+        "The specific contents of the boxes are not discernible.",
+        "The exact nature of the items on the table is unclear.",
+        "The precise purpose of the activities (e.g., packing, shipping, inventory) is not explicitly visible."
+      ]
+    },
+    {
+      "frame_index": 78,
+      "timestamp_seconds": 13.0,
+      "change_score": 0.00057,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000013",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000013.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 10,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7229,
+          "bbox_xyxy": [
+            779.69,
+            536.48,
+            866.58,
+            785.68
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4797,
+          "bbox_xyxy": [
+            711.04,
+            463.98,
+            781.31,
+            687.29
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4075,
+          "bbox_xyxy": [
+            1272.52,
+            561.7,
+            1396.36,
+            688.72
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3954,
+          "bbox_xyxy": [
+            1282.98,
+            681.64,
+            1456.12,
+            842.04
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.339,
+          "bbox_xyxy": [
+            567.09,
+            299.76,
+            704.23,
+            381.84
+          ]
+        },
+        {
+          "label": "boat",
+          "confidence": 0.3024,
+          "bbox_xyxy": [
+            471.25,
+            798.19,
+            942.48,
+            1074.92
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2738,
+          "bbox_xyxy": [
+            1170.69,
+            559.96,
+            1296.13,
+            691.62
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2679,
+          "bbox_xyxy": [
+            767.04,
+            228.75,
+            915.4,
+            374.21
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2547,
+          "bbox_xyxy": [
+            982.91,
+            40.37,
+            1155.18,
+            207.27
+          ]
+        },
+        {
+          "label": "suitcase",
+          "confidence": 0.251,
+          "bbox_xyxy": [
+            702.69,
+            737.91,
+            791.29,
+            833.91
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "fallback_blip_yolo",
+      "gemini_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 4h40m51.48286325s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16851s'}]}}",
+      "gemini_scene": {
+        "scene_description": "a warehouse with boxes and boxes on the floor",
+        "scene_type": "unknown",
+        "activities": [],
+        "safety_concerns": [],
+        "visible_evidence": [
+          "YOLO detected person (confidence 0.7229)",
+          "YOLO detected person (confidence 0.4797)",
+          "YOLO detected truck (confidence 0.4075)",
+          "YOLO detected truck (confidence 0.3954)",
+          "YOLO detected car (confidence 0.339)",
+          "YOLO detected boat (confidence 0.3024)",
+          "YOLO detected truck (confidence 0.2738)",
+          "YOLO detected truck (confidence 0.2679)",
+          "YOLO detected truck (confidence 0.2547)",
+          "YOLO detected suitcase (confidence 0.251)"
+        ],
+        "uncertainty": [
+          "Gemini failed; fallback uses BLIP caption and YOLO detections."
+        ]
+      },
+      "scene_description": "a warehouse with boxes and boxes on the floor",
+      "scene_type": "unknown",
+      "activities": [],
+      "safety_concerns": [],
+      "visible_evidence": [
+        "YOLO detected person (confidence 0.7229)",
+        "YOLO detected person (confidence 0.4797)",
+        "YOLO detected truck (confidence 0.4075)",
+        "YOLO detected truck (confidence 0.3954)",
+        "YOLO detected car (confidence 0.339)",
+        "YOLO detected boat (confidence 0.3024)",
+        "YOLO detected truck (confidence 0.2738)",
+        "YOLO detected truck (confidence 0.2679)",
+        "YOLO detected truck (confidence 0.2547)",
+        "YOLO detected suitcase (confidence 0.251)"
+      ],
+      "uncertainty": [
+        "Gemini failed; fallback uses BLIP caption and YOLO detections."
+      ]
+    },
+    {
+      "frame_index": 84,
+      "timestamp_seconds": 14.0,
+      "change_score": 0.00129,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000014",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000014.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 6,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.73,
+          "bbox_xyxy": [
+            782.72,
+            534.66,
+            866.69,
+            784.15
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4889,
+          "bbox_xyxy": [
+            710.39,
+            469.93,
+            779.06,
+            683.97
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.4683,
+          "bbox_xyxy": [
+            1272.46,
+            561.88,
+            1395.45,
+            689.05
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3894,
+          "bbox_xyxy": [
+            1282.3,
+            681.85,
+            1456.09,
+            843.55
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3019,
+          "bbox_xyxy": [
+            1170.98,
+            560.0,
+            1294.38,
+            693.23
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.2552,
+          "bbox_xyxy": [
+            599.2,
+            304.64,
+            702.43,
+            382.66
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "fallback_blip_yolo",
+      "gemini_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 4h40m43.290862059s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16843s'}]}}",
+      "gemini_scene": {
+        "scene_description": "a warehouse with boxes and boxes on the floor",
+        "scene_type": "unknown",
+        "activities": [],
+        "safety_concerns": [],
+        "visible_evidence": [
+          "YOLO detected person (confidence 0.73)",
+          "YOLO detected person (confidence 0.4889)",
+          "YOLO detected truck (confidence 0.4683)",
+          "YOLO detected truck (confidence 0.3894)",
+          "YOLO detected truck (confidence 0.3019)",
+          "YOLO detected car (confidence 0.2552)"
+        ],
+        "uncertainty": [
+          "Gemini failed; fallback uses BLIP caption and YOLO detections."
+        ]
+      },
+      "scene_description": "a warehouse with boxes and boxes on the floor",
+      "scene_type": "unknown",
+      "activities": [],
+      "safety_concerns": [],
+      "visible_evidence": [
+        "YOLO detected person (confidence 0.73)",
+        "YOLO detected person (confidence 0.4889)",
+        "YOLO detected truck (confidence 0.4683)",
+        "YOLO detected truck (confidence 0.3894)",
+        "YOLO detected truck (confidence 0.3019)",
+        "YOLO detected car (confidence 0.2552)"
+      ],
+      "uncertainty": [
+        "Gemini failed; fallback uses BLIP caption and YOLO detections."
+      ]
+    },
+    {
+      "frame_index": 90,
+      "timestamp_seconds": 15.0,
+      "change_score": 0.00087,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000015",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000015.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 10,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7506,
+          "bbox_xyxy": [
+            783.75,
+            537.05,
+            869.96,
+            779.98
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4961,
+          "bbox_xyxy": [
+            710.18,
+            472.52,
+            773.9,
+            685.49
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.382,
+          "bbox_xyxy": [
+            1271.78,
+            561.38,
+            1395.12,
+            689.81
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3734,
+          "bbox_xyxy": [
+            1282.76,
+            681.75,
+            1455.94,
+            843.32
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2953,
+          "bbox_xyxy": [
+            1710.36,
+            297.86,
+            1778.94,
+            408.91
+          ]
+        },
+        {
+          "label": "car",
+          "confidence": 0.286,
+          "bbox_xyxy": [
+            605.29,
+            305.64,
+            702.97,
+            382.78
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2822,
+          "bbox_xyxy": [
+            1171.14,
+            560.02,
+            1391.33,
+            694.31
+          ]
+        },
+        {
+          "label": "suitcase",
+          "confidence": 0.2782,
+          "bbox_xyxy": [
+            703.18,
+            738.91,
+            791.25,
+            833.66
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2613,
+          "bbox_xyxy": [
+            1170.59,
+            558.92,
+            1294.06,
+            688.75
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2607,
+          "bbox_xyxy": [
+            1115.63,
+            252.72,
+            1162.58,
+            399.2
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "fallback_blip_yolo",
+      "gemini_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 4h40m34.847178311s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16834s'}]}}",
+      "gemini_scene": {
+        "scene_description": "a warehouse with boxes and boxes on the floor",
+        "scene_type": "unknown",
+        "activities": [],
+        "safety_concerns": [],
+        "visible_evidence": [
+          "YOLO detected person (confidence 0.7506)",
+          "YOLO detected person (confidence 0.4961)",
+          "YOLO detected truck (confidence 0.382)",
+          "YOLO detected truck (confidence 0.3734)",
+          "YOLO detected person (confidence 0.2953)",
+          "YOLO detected car (confidence 0.286)",
+          "YOLO detected truck (confidence 0.2822)",
+          "YOLO detected suitcase (confidence 0.2782)",
+          "YOLO detected truck (confidence 0.2613)",
+          "YOLO detected person (confidence 0.2607)"
+        ],
+        "uncertainty": [
+          "Gemini failed; fallback uses BLIP caption and YOLO detections."
+        ]
+      },
+      "scene_description": "a warehouse with boxes and boxes on the floor",
+      "scene_type": "unknown",
+      "activities": [],
+      "safety_concerns": [],
+      "visible_evidence": [
+        "YOLO detected person (confidence 0.7506)",
+        "YOLO detected person (confidence 0.4961)",
+        "YOLO detected truck (confidence 0.382)",
+        "YOLO detected truck (confidence 0.3734)",
+        "YOLO detected person (confidence 0.2953)",
+        "YOLO detected car (confidence 0.286)",
+        "YOLO detected truck (confidence 0.2822)",
+        "YOLO detected suitcase (confidence 0.2782)",
+        "YOLO detected truck (confidence 0.2613)",
+        "YOLO detected person (confidence 0.2607)"
+      ],
+      "uncertainty": [
+        "Gemini failed; fallback uses BLIP caption and YOLO detections."
+      ]
+    },
+    {
+      "frame_index": 96,
+      "timestamp_seconds": 16.0,
+      "change_score": 0.00166,
+      "sampling_reason": "baseline",
+      "frame_id": "CCTV_Feed_1_frame_000016",
+      "image_path": "argusgraph_output\\frames\\CCTV_Feed_1_frame_000016.jpg",
+      "width": 1920,
+      "height": 1080,
+      "object_count": 10,
+      "detections": [
+        {
+          "label": "person",
+          "confidence": 0.7593,
+          "bbox_xyxy": [
+            783.74,
+            533.42,
+            865.88,
+            782.06
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4519,
+          "bbox_xyxy": [
+            709.67,
+            458.86,
+            786.67,
+            676.04
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4048,
+          "bbox_xyxy": [
+            1815.61,
+            382.25,
+            1879.68,
+            467.48
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3663,
+          "bbox_xyxy": [
+            1284.01,
+            681.76,
+            1455.96,
+            842.32
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.3277,
+          "bbox_xyxy": [
+            1271.48,
+            561.81,
+            1397.56,
+            691.08
+          ]
+        },
+        {
+          "label": "boat",
+          "confidence": 0.2979,
+          "bbox_xyxy": [
+            469.68,
+            797.38,
+            943.5,
+            1075.68
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2781,
+          "bbox_xyxy": [
+            1193.16,
+            358.16,
+            1274.56,
+            460.54
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2745,
+          "bbox_xyxy": [
+            1696.52,
+            278.36,
+            1730.59,
+            367.73
+          ]
+        },
+        {
+          "label": "truck",
+          "confidence": 0.2677,
+          "bbox_xyxy": [
+            1170.53,
+            560.51,
+            1296.96,
+            692.61
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2512,
+          "bbox_xyxy": [
+            1116.33,
+            253.57,
+            1161.64,
+            397.41
+          ]
+        }
+      ],
+      "blip_caption": "a warehouse with boxes and boxes on the floor",
+      "gemini_eligible": true,
+      "gemini_status": "success",
+      "gemini_error": null,
+      "gemini_scene": {
+        "scene_description": "The scene depicts an active indoor warehouse or distribution center with multiple individuals engaged in various tasks. The area is filled with numerous cardboard boxes, some stacked on pallets, and a long table where several people are working. A conveyor belt system is also visible on the right side of the frame.",
+        "scene_type": "Warehouse or distribution center",
+        "activities": [
+          "Sorting items at a long table",
+          "Packaging items",
+          "Moving and stacking cardboard boxes",
+          "Operating a conveyor belt system for boxes",
+          "General material handling"
+        ],
+        "safety_concerns": [
+          "Potential tripping hazards due to numerous boxes and pallets on the floor",
+          "Risk of injury from lifting and moving heavy boxes",
+          "Operation of a pallet jack"
+        ],
+        "visible_evidence": [
+          "Multiple individuals, some wearing high-visibility vests",
+          "Numerous cardboard boxes, many stacked on wooden pallets",
+          "A long table with items being sorted or packaged",
+          "A pallet jack",
+          "A conveyor belt system",
+          "Metal shelving units",
+          "Loading dock doors in the background",
+          "A blue office or storage unit",
+          "A digital timestamp \"01/10/2014 10:45:26 AM\""
+        ],
+        "uncertainty": [
+          "The specific contents of the boxes are not discernible",
+          "The exact nature of the items being handled on the table is unclear",
+          "The purpose of the red bow decoration is unknown"
+        ]
+      },
+      "scene_description": "The scene depicts an active indoor warehouse or distribution center with multiple individuals engaged in various tasks. The area is filled with numerous cardboard boxes, some stacked on pallets, and a long table where several people are working. A conveyor belt system is also visible on the right side of the frame.",
+      "scene_type": "Warehouse or distribution center",
+      "activities": [
+        "Sorting items at a long table",
+        "Packaging items",
+        "Moving and stacking cardboard boxes",
+        "Operating a conveyor belt system for boxes",
+        "General material handling"
+      ],
+      "safety_concerns": [
+        "Potential tripping hazards due to numerous boxes and pallets on the floor",
+        "Risk of injury from lifting and moving heavy boxes",
+        "Operation of a pallet jack"
+      ],
+      "visible_evidence": [
+        "Multiple individuals, some wearing high-visibility vests",
+        "Numerous cardboard boxes, many stacked on wooden pallets",
+        "A long table with items being sorted or packaged",
+        "A pallet jack",
+        "A conveyor belt system",
+        "Metal shelving units",
+        "Loading dock doors in the background",
+        "A blue office or storage unit",
+        "A digital timestamp \"01/10/2014 10:45:26 AM\""
+      ],
+      "uncertainty": [
+        "The specific contents of the boxes are not discernible",
+        "The exact nature of the items being handled on the table is unclear",
+        "The purpose of the red bow decoration is unknown"
+      ]
+    }
+  ],
+  "embedding_file": "argusgraph_output\\embeddings\\CCTV_Feed_1_embeddings.npz"
+}

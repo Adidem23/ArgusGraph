@@ -1,0 +1,15 @@
+av 
+opencv-python
+numpy
+ultralytics
+torch 
+transformers 
+pillow
+typesafe-sdk
+falkordb
+google-genai
+python-dotenv
+fastmcp
+deepagents 
+langchain-mcp-adapters 
+langchain-google-genai
