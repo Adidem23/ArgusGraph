@@ -373,8 +373,8 @@ Navigate to the backend directory containing `requirements.txt`.
 **Windows PowerShell:**
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+python -m venv venv
+.\venv\Scripts\Activate.ps1
 
 python -m pip install --upgrade pip
 pip install -r requirements.txt
@@ -390,7 +390,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-and go into agent directory and set up another env there this is done to avoid 
+and go into agent directory and set up another env there this is done to avoid conflict between version packages 
 
 ```powershell
 python -m venv mcpenv
