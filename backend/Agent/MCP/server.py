@@ -542,5 +542,5 @@ async def run_readonly_cypher(
 
 if __name__ == "__main__":
     host = os.getenv("MCP_HOST", "0.0.0.0")
-    port = int(os.getenv("MCP_PORT", "8000"))
+    port = int(os.getenv("MCP_PORT", "8001"))
     mcp.run(transport="http", host=host, port=port, path="/mcp")

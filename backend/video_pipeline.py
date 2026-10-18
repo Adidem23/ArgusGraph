@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GEMINI_MODEL = "gemini-2.5-flash"
-GEMINI_API_KEY = "AIzaSyB2DrWXOvv5lD6ctAZ3VKdlex6UaeW4BGw"
+GEMINI_API_KEY = ""
 CLIP_NAME = "openai/clip-vit-base-patch32"
 BLIP_CAPTION_NAME = "Salesforce/blip-image-captioning-base"
 

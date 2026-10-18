@@ -9,6 +9,7 @@ import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from pydantic import BaseModel, Field
 
 from dotenv import load_dotenv
 from fastapi import BackgroundTasks, FastAPI, File, HTTPException, UploadFile
@@ -16,16 +17,29 @@ from fastapi.middleware.cors import CORSMiddleware
 
 load_dotenv()
 
+
+GOOGLE_API_KEY = ""
+AGENT_MODEL_NAME = os.getenv("ARGUSGRAPH_AGENT_MODEL", "gemini-2.5-flash")
+
+MCP_URL = os.getenv("ARGUSGRAPH_MCP_URL", "http://127.0.0.1:8001/mcp")
+
+MAX_HISTORY_TURNS = max(1, int(os.getenv("ARGUSGRAPH_MAX_HISTORY_TURNS", "6")))
+
 APP_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = APP_DIR.parent
 UPLOAD_DIR = Path(os.getenv("ARGUSGRAPH_UPLOAD_DIR", str(PROJECT_DIR / "uploads"))).resolve()
 OUTPUT_DIR = Path(os.getenv("ARGUSGRAPH_OUTPUT_DIR", str(PROJECT_DIR / "argusgraph_output"))).resolve()
-# This must point to the full video pipeline script, NOT agent.py (the graph investigator).
+
 PIPELINE_SCRIPT_RAW = Path(os.getenv("ARGUSGRAPH_PIPELINE_SCRIPT", str(PROJECT_DIR / "video_pipeline.py")))
+
 PIPELINE_SCRIPT = (PROJECT_DIR / PIPELINE_SCRIPT_RAW).resolve() if not PIPELINE_SCRIPT_RAW.is_absolute() else PIPELINE_SCRIPT_RAW.resolve()
+
 GRAPH_NAME = os.getenv("FALKORDB_GRAPH_NAME", "video_graph")
+
 FALKORDB_HOST = os.getenv("FALKORDB_HOST", "localhost")
+
 FALKORDB_PORT = int(os.getenv("FALKORDB_PORT", "6379"))
+
 FALKORDB_PASSWORD = os.getenv("FALKORDB_PASSWORD") or None
 
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
@@ -38,6 +52,151 @@ app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True
 # In-memory job state is suitable for the first local integration milestone.
 # Use Redis/a durable queue if this becomes a multi-worker deployment.
 jobs: dict[str, dict[str, Any]] = {}
+
+# Agent runtime and lightweight in-memory per-session conversation state.
+agent_instance: Any = None
+mcp_client: Any = None
+agent_init_error: str | None = None
+agent_sessions: dict[str, dict[str, Any]] = {}
+agent_session_locks: dict[str, asyncio.Lock] = {}
+
+SYSTEM_PROMPT = """
+# IDENTITY
+You are ArgusGraph, an evidence-grounded CCTV investigation agent. Investigate videos represented as a spatiotemporal knowledge graph in FalkorDB using only the registered MCP tools.
+
+# CORE RULES
+- The graph is the source of truth for stored records and relationships.
+- Never invent video IDs, frame IDs, timestamps, detections, counts, attributes, relationships, or tool results.
+- Never claim you inspected a frame unless a tool returned evidence for it.
+- Treat conversation history as context, not graph evidence. Re-query when current factual verification matters.
+- Keep retrieval targeted; do not dump the entire graph into context.
+- Distinguish observed records from inference. Do not infer real-world identity, intent, ownership, or wrongdoing from appearance or detector labels.
+- Missing evidence is not proof that an event did not occur.
+- Keep `blip_caption`, `gemini_scene`, and `scene_description` distinct.
+- Use only registered MCP tools and their actual input schemas. Never attempt graph writes or mutations.
+
+# GRAPH MODEL
+The graph may resemble (Video)-[:HAS_FRAME]->(Frame)-[:HAS_ATTRIBUTE]->(FrameAttribute), but verify actual labels, properties, and relationships through tools. Possible fields include video_id, frame_id, frame_index, timestamp_seconds, object_count, detections, blip_caption, gemini_scene, scene_description, scene_type, activities, safety_concerns, visible_evidence, and uncertainty. These fields are examples, not guarantees.
+
+Never confuse frame_index with timestamp_seconds, frame_id with video_id, a file path with visual evidence, a generated caption with verified ground truth, or a graph relationship with proof of identity or causation.
+
+# TOOL SELECTION
+- For graph overview/counts, use `get_graph_overview` or available aggregate tools such as `graph_stats` and `list_videos`. Prefer aggregate summaries over loading all frames.
+- To find an object/activity, use `search_frames`, then inspect relevant candidates with `get_frame_details` when available.
+- For event progression, verify the video ID and timestamp first, then use bounded `get_temporal_context` or relevant `get_frame_neighbors` tools. Nearby sampled frames do not prove uninterrupted activity.
+- Use `run_readonly_cypher` only for targeted read-only queries when dedicated tools are insufficient. Follow its actual schema, limit returned records, and never bypass read-only restrictions.
+- Inspect actual tool descriptions and schemas. Tool names above describe intended roles and may not all be registered.
+- Respect pagination contracts; do not invent cursors or totals.
+
+# INVESTIGATION METHOD
+1. Establish the relevant video, time range, and question.
+2. Retrieve a small, relevant set of records.
+3. Verify identifiers and inspect source attributes.
+4. Compare detections, captions, and scene descriptions without treating generated text as independently verified fact.
+5. Order observations chronologically when useful and distinguish observed transitions from inferred continuity.
+6. Report meaningful conflicts accurately. Never invent calibrated probability percentages.
+
+# SESSION CONTEXT
+Use the provided scope and recent conversation to understand follow-up questions. Session memory is not evidence. Revalidate identifiers and current counts when they matter. Do not store or reveal credentials.
+
+# RESPONSE STYLE — FINAL OBSERVATIONS ONLY
+Write a concise, neatly formatted answer focused on the final observations and the evidence that supports them. Do not add a standalone “Limitations” section, generic caveats, long methodology narration, or repetitive summaries.
+For a simple question, answer directly. For an investigation, use only the sections that add value, usually:
+## Final observations
+A short direct conclusion.
+## Evidence
+A compact bullet list of actual video IDs, frame IDs, timestamps, detections, scene descriptions, or graph attributes returned by tools.
+## Timeline
+Include only when event order matters.
+
+Use inline evidence references when identifiers are available: [Video: actual_id | Frame: actual_id | Time: actual_seconds s]. Never fabricate identifiers or evidence. Mention uncertainty briefly only when it materially changes what the evidence supports; do not create a separate limitations section. Use Markdown headings and short bullets; avoid dense paragraphs and excessive nested lists.
+
+# FAILURE HANDLING
+If no relevant records are found, state that the search returned no supporting records; do not claim the event never occurred. If an identifier cannot be verified, ask a concise clarification. If a tool fails, do not fabricate its result; try another registered tool if appropriate, otherwise state the issue briefly.
+
+Evidence first. Conclusions should be traceable to returned graph records.
+
+"""
+
+class AgentQueryRequest(BaseModel):
+    question: str = Field(..., min_length=1, max_length=12000)
+    session_id: str = Field(..., min_length=1, max_length=128)
+    scope: str | None = Field(default=None, max_length=2000)
+
+
+class AgentResetRequest(BaseModel):
+    session_id: str = Field(..., min_length=1, max_length=128)
+
+
+def extract_agent_answer(result: Any) -> str:
+    """Extract the final assistant message from a Deep Agents result."""
+    if not isinstance(result, dict):
+        return str(result)
+    for message in reversed(result.get("messages", [])):
+        message_type = getattr(message, "type", None)
+        if message_type is None and isinstance(message, dict):
+            message_type = message.get("type") or message.get("role")
+        if message_type not in {"ai", "assistant"}:
+            continue
+        content = message.get("content", "") if isinstance(message, dict) else getattr(message, "content", "")
+        if isinstance(content, str) and content.strip():
+            return content.strip()
+        if isinstance(content, list):
+            parts = []
+            for block in content:
+                if isinstance(block, str):
+                    parts.append(block)
+                elif isinstance(block, dict) and block.get("type") in {"text", "output_text"}:
+                    if block.get("text"):
+                        parts.append(block["text"])
+            if parts:
+                return "\n".join(parts).strip()
+        if content:
+            return str(content)
+    return "No assistant response was returned."
+
+
+def get_agent_session(session_id: str) -> dict[str, Any]:
+    return agent_sessions.setdefault(session_id, {"scope": "", "history": []})
+
+
+async def initialize_agent() -> None:
+    """Discover MCP tools and build the graph-investigation agent once."""
+    global agent_instance, mcp_client, agent_init_error
+    if not GOOGLE_API_KEY:
+        agent_init_error = "Missing GOOGLE_API_KEY (or GEMINI_API_KEY) in backend .env."
+        return
+    try:
+        from deepagents import create_deep_agent
+        from langchain_mcp_adapters.client import MultiServerMCPClient
+        from langchain_google_genai import ChatGoogleGenerativeAI
+
+        mcp_client = MultiServerMCPClient({
+            "argusgraph": {"transport": "http", "url": MCP_URL}
+        })
+        tools = await mcp_client.get_tools()
+        if not tools:
+            raise RuntimeError(f"No MCP tools discovered at {MCP_URL}.")
+        llm = ChatGoogleGenerativeAI(
+            model=AGENT_MODEL_NAME,
+            google_api_key=GOOGLE_API_KEY,
+            temperature=0.1,
+        )
+        agent_instance = create_deep_agent(
+            model=llm, tools=tools, system_prompt=SYSTEM_PROMPT
+        )
+        agent_init_error = None
+        print(f"ArgusGraph agent initialized with {len(tools)} MCP tools from {MCP_URL}.")
+    except Exception as exc:
+        agent_instance = None
+        agent_init_error = f"Agent initialization failed ({type(exc).__name__}): {exc}"
+        print(agent_init_error)
+
+
+@app.on_event("startup")
+async def startup_agent() -> None:
+    await initialize_agent()
+
 
 
 def utc_now() -> str:
@@ -152,6 +311,68 @@ def get_graph_for_video(video_id: str) -> dict[str, Any]:
         raise RuntimeError(f"No graph records found for video_id={video_id!r} in FalkorDB graph {GRAPH_NAME!r}.")
     # Return data ready for Cytoscape.js; positions are left to the frontend layout engine.
     return {"video_id": video_id, "graph_name": GRAPH_NAME, "nodes": list(nodes.values()), "edges": list(edges.values())}
+
+
+@app.get("/api/agent/status")
+def get_agent_status() -> dict[str, Any]:
+    return {
+        "ready": agent_instance is not None,
+        "model": AGENT_MODEL_NAME,
+        "mcp_url": MCP_URL,
+        "error": agent_init_error,
+    }
+
+
+@app.post("/api/agent/query")
+async def query_agent(request: AgentQueryRequest) -> dict[str, Any]:
+    question = request.question.strip()
+    if not question:
+        raise HTTPException(status_code=400, detail="Question cannot be empty.")
+    if agent_instance is None:
+        raise HTTPException(
+            status_code=503,
+            detail=agent_init_error or "Agent is not initialized. Check the MCP server and backend logs.",
+        )
+
+    session_id = request.session_id
+    lock = agent_session_locks.setdefault(session_id, asyncio.Lock())
+    async with lock:
+        session = get_agent_session(session_id)
+        if request.scope is not None:
+            session["scope"] = request.scope.strip()
+
+        scope = session.get("scope") or "No user-defined investigation scope."
+        messages = [{
+            "role": "system",
+            "content": (
+                "SESSION CONTEXT\nUse this only to understand conversation and scope; it is not verified graph evidence. "
+                "Re-query MCP tools when factual verification is needed.\n\n"
+                f"User-defined investigation scope:\n{scope}"
+            ),
+        }]
+        messages.extend(session["history"][-(MAX_HISTORY_TURNS * 2):])
+        messages.append({"role": "user", "content": question})
+        try:
+            result = await agent_instance.ainvoke({"messages": messages})
+            answer = extract_agent_answer(result)
+        except Exception as exc:
+            raise HTTPException(
+                status_code=502,
+                detail=f"Agent query failed ({type(exc).__name__}): {exc}",
+            ) from exc
+
+        session["history"].extend([
+            {"role": "user", "content": question},
+            {"role": "assistant", "content": answer},
+        ])
+        session["history"] = session["history"][-(MAX_HISTORY_TURNS * 2):]
+        return {"session_id": session_id, "question": question, "answer": answer, "scope": session.get("scope", "")}
+
+
+@app.post("/api/agent/reset")
+def reset_agent_session(request: AgentResetRequest) -> dict[str, Any]:
+    agent_sessions.pop(request.session_id, None)
+    return {"session_id": request.session_id, "reset": True}
 
 
 @app.get("/health")
