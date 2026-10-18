@@ -44,7 +44,8 @@ The goal is to make video evidence searchable, connected, and easier to investig
 
 ## Architecture
 
-![ArgusGraph System Architecture](docs/architecture.png)
+<img width="2770" height="505" alt="Email_Validator Diagram" src="https://github.com/user-attachments/assets/91e363f9-ce75-42c4-ac35-ae9bb6a30cd3" />
+
 
 ### Architecture Overview
 
