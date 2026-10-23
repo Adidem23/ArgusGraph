@@ -7,6 +7,8 @@ The system combines computer vision, multimodal AI, graph databases, and agentic
 
 **Demo video:** [Watch ArgusGraph on YouTube](https://youtu.be/YAU1LjTdET8?si=FkvikBKzJF_ssnDN)
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/adidem23-argusgraph-nmdboj?v=b8465ba2dbd872fd21fcd6c0cd2dff32)](https://m8ven.ai/mcp/adidem23-argusgraph-nmdboj?s=readme)
+
 ---
 
 ## Table of Contents
